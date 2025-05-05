@@ -1,72 +1,99 @@
+🔗 Live Demo: https://referral-hub.example.com
+# RefShare - Referral Code Sharing Platform
 
-## Project info
+A modern web application for discovering and sharing referral codes across various categories.
 
-**URL**: https://lovable.dev/projects/d03731d3-b7fc-435d-a627-0dcdcbc38e1e
+## Overview
 
-## How can I edit this code?
+RefShare allows users to browse referral codes by category, view detailed information about each code including benefits and usage instructions, and share their own referral codes with the community.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- Browse referral codes by categories
+- View detailed information for each referral code
+- Responsive design for all device sizes
+- Modern UI with Tailwind CSS and shadcn/ui components
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d03731d3-b7fc-435d-a627-0dcdcbc38e1e) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+### Frontend
+- React with TypeScript
+- Vite as build tool
+- TanStack React Query for data fetching
+- Tailwind CSS for styling
+- shadcn/ui component library
 
-**Use your preferred IDE**
+### Backend
+- Node.js with Express
+- MySQL database
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v16+)
+- MySQL (v8+)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Database Setup
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. Start your MySQL server:
+```bash
+/usr/local/mysql/bin/mysql -u root -p
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Create and set up the database using the provided SQL script:
+```bash
+/usr/local/mysql/bin/mysql -u root -p < server/setup.sql
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/refshare.git
+cd refshare
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the API server:
+```bash
+cd server
+node index.js
+```
+
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+5. Open your browser and navigate to:
+```
+http://localhost:5173
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## API Endpoints
 
-**Use GitHub Codespaces**
+The following API endpoints are available:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- `GET /api/test` - Test database connection
+- `GET /api/categories` - Get all categories
+- `GET /api/categories/:slug` - Get category by slug
+- `GET /api/referral-codes` - Get all referral codes
+- `GET /api/referral-codes/category/:categoryId` - Get referral codes by category ID
+- `GET /api/referral-codes/:id` - Get referral code by ID
 
-## What technologies are used for this project?
+## Contributing
 
-This project is built with:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d03731d3-b7fc-435d-a627-0dcdcbc38e1e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
