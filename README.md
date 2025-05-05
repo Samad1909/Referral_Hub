@@ -94,6 +94,14 @@ The following API endpoints are available:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## OUTPUT:
+<img width="1439" alt="Screenshot 2025-05-05 at 8 05 41 PM" src="https://github.com/user-attachments/assets/9e92be30-33f8-4e9c-9f1d-60bc7e8ebcf2" />
+<img width="1440" alt="Screenshot 2025-05-05 at 8 05 50 PM" src="https://github.com/user-attachments/assets/fd2c44ec-86f2-4046-b0e6-40af36cd6d29" />
+<img width="1440" alt="Screenshot 2025-05-05 at 8 05 59 PM" src="https://github.com/user-attachments/assets/c0acdef9-b1df-43ab-9f67-5bdbbfcaeab7" />
+<img width="1440" alt="Screenshot 2025-05-05 at 8 06 10 PM" src="https://github.com/user-attachments/assets/ad0aac4d-cb53-4355-a40f-fb239ed6cb5e" />
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
