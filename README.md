@@ -1,4 +1,4 @@
-🔗 Live Demo: https://referral-hub.example.com
+
 # RefShare - Referral Code Sharing Platform
 
 A modern web application for discovering and sharing referral codes across various categories.
